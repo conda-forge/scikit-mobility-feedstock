@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.6
     - pip
   run:
     - folium
@@ -35,6 +35,10 @@ requirements:
     - shapely
     - statsmodels
     - tqdm
+    - python-igraph
+    - h3-py
+    - pyproj
+    - fiona
 
 test:
   imports:

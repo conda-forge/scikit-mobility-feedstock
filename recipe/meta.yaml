@@ -23,7 +23,7 @@ requirements:
     - folium
     - geojson
     - geopandas
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - powerlaw

@@ -39,6 +39,7 @@ requirements:
     - h3-py
     - pyproj
     - fiona
+    - python >=3.6
 
 test:
   imports:

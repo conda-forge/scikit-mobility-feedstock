@@ -1,5 +1,5 @@
 {% set name = "scikit-mobility" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32d26bff82a1403a2e05deba59045fe7706b73eea8db4d0083ec941ad79f512c
+  sha256: 3506a550a18ee9e555d7a41a4cb6b588e876932618cc10d1fa83c17c192f5948
   
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -54,12 +54,12 @@ test:
     - skmob.utils
 
 about:
-  home: "https://github.com/scikit-mobility/scikit-mobility"
+  home: https://github.com/scikit-mobility/scikit-mobility
 
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: "A toolbox for analyzing and processing mobility data."
+  summary: A toolbox for analyzing and processing mobility data.
   description: |
     scikit-mobility is a library for human mobility analysis in Python. The library allows to: (i) represent trajectories and mobility flows with 
     proper data structures, TrajDataFrame and FlowDataFrame; (ii) manage and manipulate mobility data of various formats 

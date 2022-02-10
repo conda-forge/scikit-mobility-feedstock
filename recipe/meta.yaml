@@ -1,5 +1,5 @@
 {% set name = "scikit-mobility" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5363d3a17c78aada10127e0039d6c74eb6996c58a7068f1bdc507ae5f79c4a04
+  sha256: b86b4636b4dd5e54f9e4e3ff42e0766dba6046022f57821daf9971244d44577a
   
 
 build:
@@ -19,6 +19,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - poetry
   run:
     - folium
     - geojson

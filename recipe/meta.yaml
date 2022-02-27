@@ -21,6 +21,7 @@ requirements:
     - pip
     - poetry
   run:
+    - fiona
     - folium
     - geojson
     - geopandas
@@ -39,7 +40,6 @@ requirements:
     - python-igraph
     - h3-py
     - pyproj
-    - fiona
     - python >=3.6
 
 test:
